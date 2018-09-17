@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title id="pomodoro-title">Pomodoro Clock</title>
+  <link href="./sass/styles.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Mukta" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <h1 class="header__title">Pomodoro</h1>
+  </header>
+
+  <section class="status-display">
+    <h2 class="status-display__title" id="status-display">Session</h2>
+  </section>
+
+  <div class="timer-container">
+    
+    <section class="timer">
+      <div class="timer__orbit" id="orbit">
+        <div class="orbit__planet"></div>
+      </div>
+      <div class="timer__star">
+        <p class="timer__text" id="display-time"></p>
+      </div>
+    </section>
+
+    <section class="session">
+      <h3 class="session__title">Session Length</h3>
+      <div class="session__container">
+        <button class="btn__timer btn__timer--left" id="session-left"></button>
+        <div class="session-length__value" id="session-value"></div>
+        <button class="btn__timer btn__timer--right" id="session-right"></button>
+      </div>
+    </section>
+
+    <section class="break">
+      <h3 class="break__title">Break Length</h3>
+      <div class="break__container">
+        <button class="btn__timer btn__timer--left" id="break-left"></button>
+        <div class="break-length__value" id="break-value"></div>
+        <button class="btn__timer btn__timer--right" id="break-right"></button>
+      </div>
+    </section>
+
+  </div>
+
+  <div class="control">
+    <button class="control__btn control__btn--reset" id="control-reset">Reset</button>
+    <button class="control__btn control__btn--start" id="control-start">Start</button>
+    <button class="control__btn control__btn--pause" id="control-pause">Pause</button>
+  </div>
+  <!-- chirping sound to play when timer ends -->
+  <audio id="play-bell" src="https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3"></audio>
+  <script src="./src/script.js"></script>
+</body>
+</html>
