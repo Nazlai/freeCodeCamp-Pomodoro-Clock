@@ -106,7 +106,7 @@ body{
 
 .session{
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 5px;
     margin-bottom: 20px;
     &__container{
         display: flex;
@@ -115,6 +115,9 @@ body{
         & >:nth-child(2){
             margin: 0 15px;
         }
+    }
+    @media only screen and (min-width:$small-mobile-width){
+        margin-right: 20px;
     }
     @media only screen and (min-width:$small-tablet-width){
         font-size: 1.5em;
@@ -127,7 +130,7 @@ body{
 
 .break{
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 5px;
     margin-bottom: 20px;
     &__container{
         display: flex;
@@ -136,6 +139,9 @@ body{
         & >:nth-child(2){
             margin: 0 15px;
         }
+    }
+    @media only screen and (min-width:$small-mobile-width){
+        margin-left: 20px;
     }
     @media only screen and (min-width:$small-tablet-width){
         font-size: 1.5em;
@@ -179,7 +185,10 @@ body{
         width: 90px;
         height: 40px;
         &--start{
-            margin: 0 15px;
+            margin: 0 5px;
+            @media only screen and (min-width:$small-mobile-width){
+                margin: 0 15px;
+            }
             @media only screen and (min-width: $larger-mobile-width){
                 margin: 0 20px;
             }
