@@ -64,6 +64,24 @@ body {
   text-align: center;
 }
 
+@media only screen and (min-width: 650px) {
+  .timer-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .timer-container > :nth-child(1) {
+    order: 2;
+  }
+  .timer-container > :nth-child(2) {
+    order: 1;
+    align-self: center;
+  }
+  .timer-container > :nth-child(3) {
+    order: 3;
+    align-self: center;
+  }
+}
+
 .header {
   margin: 20px auto;
 }
@@ -89,24 +107,6 @@ body {
 .status-display__title {
   font-size: 2em;
   text-transform: capitalize;
-}
-
-@media only screen and (min-width: 650px) {
-  .timer-container {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .timer-container > :nth-child(1) {
-    order: 2;
-  }
-  .timer-container > :nth-child(2) {
-    order: 1;
-    align-self: center;
-  }
-  .timer-container > :nth-child(3) {
-    order: 3;
-    align-self: center;
-  }
 }
 
 .timer {
@@ -210,7 +210,7 @@ body {
 
 .session {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 5px;
   margin-bottom: 20px;
 }
 .session__container {
@@ -220,6 +220,11 @@ body {
 }
 .session__container > :nth-child(2) {
   margin: 0 15px;
+}
+@media only screen and (min-width: 325px) {
+  .session {
+    margin-right: 20px;
+  }
 }
 @media only screen and (min-width: 430px) {
   .session {
@@ -235,7 +240,7 @@ body {
 
 .break {
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 5px;
   margin-bottom: 20px;
 }
 .break__container {
@@ -245,6 +250,11 @@ body {
 }
 .break__container > :nth-child(2) {
   margin: 0 15px;
+}
+@media only screen and (min-width: 325px) {
+  .break {
+    margin-left: 20px;
+  }
 }
 @media only screen and (min-width: 430px) {
   .break {
@@ -258,10 +268,10 @@ body {
   }
 }
 
-.btn__timer {
+.btn {
   outline: none;
 }
-.btn__timer--left {
+.btn--left {
   background: transparent;
   border-top: 18px solid transparent;
   border-bottom: 18px solid transparent;
@@ -269,7 +279,7 @@ body {
   border-left: none;
   border-radius: 15%;
 }
-.btn__timer--right {
+.btn--right {
   background: transparent;
   border-top: 18px solid transparent;
   border-bottom: 18px solid transparent;
@@ -293,7 +303,12 @@ body {
   height: 40px;
 }
 .control__btn--start {
-  margin: 0 15px;
+  margin: 0 5px;
+}
+@media only screen and (min-width: 325px) {
+  .control__btn--start {
+    margin: 0 15px;
+  }
 }
 @media only screen and (min-width: 360px) {
   .control__btn--start {
@@ -306,4 +321,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */

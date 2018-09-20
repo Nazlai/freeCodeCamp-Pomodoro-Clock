@@ -1,0 +1,19 @@
+.btn{
+    outline: none;
+    &--left{
+        background: transparent;
+        border-top: 18px solid transparent;
+        border-bottom: 18px solid transparent;
+        border-right: 24px solid #fff;
+        border-left: none;
+        border-radius: 15%;
+    }
+    &--right{
+        background: transparent;
+        border-top: 18px solid transparent;
+        border-bottom: 18px solid transparent;
+        border-left: 24px solid #fff;
+        border-right: none;
+        border-radius: 15%;
+    }
+}

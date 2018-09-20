@@ -1,0 +1,26 @@
+.control{
+    margin: 20px auto;
+    padding: 40px 0;
+    &__btn{
+        outline: none;
+        background-color: $main-color;
+        color: $text-color;
+        border: 2px solid #fff;
+        border-radius: 4px;
+        text-transform: uppercase;
+        width: 90px;
+        height: 40px;
+        &--start{
+            margin: 0 5px;
+            @media only screen and (min-width:$small-mobile-width){
+                margin: 0 15px;
+            }
+            @media only screen and (min-width: $larger-mobile-width){
+                margin: 0 20px;
+            }
+            @media only screen and (min-width: $tablet-width){
+                margin: 0 40px;
+            }
+        }
+    }
+}
